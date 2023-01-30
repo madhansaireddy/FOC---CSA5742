@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+#include<math.h>
+int main(){
+	int binary,decimal=0,i=0;
+	printf("enterr the binary number :");
+	scanf("%d",&binary);
+	while (binary!=0){
+		decimal=decimal+(binary%10)*pow(2,i++);
+		binary=binary/10;
+	}
+	printf("the decimal number is %d",decimal);
+	
+	return 0;
+}
